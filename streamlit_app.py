@@ -26,6 +26,7 @@ if uid != "":
 
     if not has_video:
         st.subheader("Train model")
+        st.markdown("[mp4 record here](https://tinnguyenhuuletrong.github.io/Learning/opencv-playground/sample_webcam_recorder.html)")
         uploaded_file = st.file_uploader("File uploader", type=["mp4"])
         if uploaded_file is not None:
             # write video

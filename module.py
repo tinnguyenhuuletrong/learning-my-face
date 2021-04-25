@@ -107,10 +107,12 @@ def draw_face_rec(data, face_locations, results):
     i = 0
     for enc in face_locations:
         (top, right, bottom, left) = enc
-        cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255))
+        
         font = cv2.FONT_HERSHEY_DUPLEX
+        color = (0, 255, 0) if results[i] == 1 else (0, 0, 255)
+        cv2.rectangle(frame, (left, top), (right, bottom), color)
         cv2.putText(
-            frame, str(results[i]), (left - 6, top - 10), font, 1.0, (0, 255, 0), 1
+            frame, str(results[i]), (left - 6, top - 10), font, 1.0, color, 1
         )
         i += 1
     return cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
