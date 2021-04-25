@@ -2,10 +2,15 @@
 
 ## Instalation
 
-Create Python virtual env
+Require Python 3.9.4
+```sh
+pyenv install 3.9.4
+```
 
+Create Python virtual env
 ```sh
 python3 -m venv runner-env
+source runner-env/bin/activate
 python -m pip install -r requirements.txt
 ```
 
