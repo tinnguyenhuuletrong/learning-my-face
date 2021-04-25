@@ -16,7 +16,7 @@ python -m pip install -r requirements.txt
 2. Waiting for processing complete
 3. Upload a pic -> your face will label as 1
 
-[![Watch the video](doc/streamlit-demo.mp4)](doc/streamlit-demo.mp4)
+[![Watch the video](doc/streamlit-demo.mp4)](./doc/streamlit-demo.mp4)
 
 ## Cloud dev
 
